@@ -1,0 +1,19 @@
+global:
+    name: physics
+    version: v0.1.0
+    cmake: 3.24
+    kind: [static]
+    tests: true
+    documentation: true
+    cicd: true
+repositories:
+    -   name: system
+        tag: v1.0.1
+        linkage: static
+example:
+    names: [basic]
+    repositories:
+        -   name: icore
+            tag: v0.2.0
+        -   name: raylib_impl
+            tag: v0.2.0
